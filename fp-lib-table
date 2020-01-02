@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "4 Player Adapter")(type KiCad)(uri "$(KIPRJMOD)/4 Player Adapter.pretty")(options "")(descr ""))
+  (lib (name "OpenAmigaFourPlayerAdapter")(type KiCad)(uri "$(KIPRJMOD)/OpenAmigaFourPlayerAdapter.pretty")(options "")(descr ""))
 )

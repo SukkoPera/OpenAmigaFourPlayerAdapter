@@ -172,7 +172,7 @@ U 1 1 5E0E9126
 P 6250 3600
 F 0 "JP3" V 6085 3528 50  0000 C CNN
 F 1 "J3POWER" V 6176 3528 50  0000 C CNN
-F 2 "4 Player Adapter:PinHeader_1x02_P2.54mm_Vertical" H 6250 3600 50  0001 C CNN
+F 2 "OpenAmigaFourPlayerAdapter:PinHeader_1x02_P2.54mm_Vertical" H 6250 3600 50  0001 C CNN
 F 3 "~" H 6250 3600 50  0001 C CNN
 	1    6250 3600
 	0    1    1    0   
@@ -191,7 +191,7 @@ U 1 1 5E0F1A6F
 P 6040 4500
 F 0 "JP4" V 5875 4428 50  0000 C CNN
 F 1 "J4POWER" V 5966 4428 50  0000 C CNN
-F 2 "4 Player Adapter:PinHeader_1x02_P2.54mm_Vertical" H 6040 4500 50  0001 C CNN
+F 2 "OpenAmigaFourPlayerAdapter:PinHeader_1x02_P2.54mm_Vertical" H 6040 4500 50  0001 C CNN
 F 3 "~" H 6040 4500 50  0001 C CNN
 	1    6040 4500
 	0    1    1    0   

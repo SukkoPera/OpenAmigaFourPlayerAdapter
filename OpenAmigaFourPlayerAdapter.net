@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "/home/sukko/Documents/kicad/Graham4Player/kicad/4 Player Adapter.sch")
-    (date "gio 2 gen 2020, 17:11:00")
+    (source /home/sukko/Documents/kicad/OpenAmigaFourPlayerAdapter/OpenAmigaFourPlayerAdapter.sch)
+    (date "gio 2 gen 2020, 18:00:22")
     (tool "Eeschema 5.1.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -9,9 +9,9 @@
         (company SukkoPera)
         (rev 1git)
         (date 2020-01-02)
-        (source "4 Player Adapter.sch")
-        (comment (number 1) (value "Thanks to Graham P."))
-        (comment (number 2) (value ""))
+        (source OpenAmigaFourPlayerAdapter.sch)
+        (comment (number 1) (value "Licensed under CERN OHL v.1.2"))
+        (comment (number 2) (value "Thanks to Graham P."))
         (comment (number 3) (value ""))
         (comment (number 4) (value "")))))
   (components
@@ -35,14 +35,14 @@
       (tstamp 03A3F618))
     (comp (ref JP3)
       (value J3POWER)
-      (footprint "4 Player Adapter:PinHeader_1x02_P2.54mm_Vertical")
+      (footprint OpenAmigaFourPlayerAdapter:PinHeader_1x02_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x02_Male) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E0E9126))
     (comp (ref JP4)
       (value J4POWER)
-      (footprint "4 Player Adapter:PinHeader_1x02_P2.54mm_Vertical")
+      (footprint OpenAmigaFourPlayerAdapter:PinHeader_1x02_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x02_Male) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
@@ -124,7 +124,7 @@
         (pin (num 2) (name Pin_2) (type passive)))))
   (libraries
     (library (logical 4_Player_Adapter-eagle-import)
-      (uri /home/sukko/Documents/kicad/Graham4Player/kicad/4_Player_Adapter-eagle-import.lib))
+      (uri /home/sukko/Documents/kicad/OpenAmigaFourPlayerAdapter/4_Player_Adapter-eagle-import.lib))
     (library (logical Connector)
       (uri /usr/share/kicad/library/Connector.lib)))
   (nets
