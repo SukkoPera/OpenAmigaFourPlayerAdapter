@@ -1,0 +1,6 @@
+*.bak
+*.*-bak
+*.bck
+*.sch-bak
+gerbers/
+RELEASES/
