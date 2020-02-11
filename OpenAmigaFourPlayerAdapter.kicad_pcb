@@ -456,10 +456,10 @@
     (pad 8 smd rect (at 1.385 0 180) (size 1.846667 3.48) (layers Bottom B.Paste B.Mask)
       (net 13 /gnd))
     (pad 9 smd rect (at 4.155 0 180) (size 1.846667 3.48) (layers Bottom B.Paste B.Mask))
-    (model ${KISYS3DMOD}/Connector_Dsub.3dshapes/DSUB-9_Male_EdgeMount_P2.77mm.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/3dmodels/DSUB-9_Male_Vertical_P2.77x2.84mm.wrl
+      (offset (xyz -5.5 -2.5 0.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -575,10 +575,10 @@
       (net 8 /down4))
     (pad 1 smd rect (at -5.54 0 180) (size 1.846667 3.48) (layers Top F.Paste F.Mask)
       (net 7 /up4))
-    (model ${KISYS3DMOD}/Connector_Dsub.3dshapes/DSUB-9_Male_EdgeMount_P2.77mm.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/3dmodels/DSUB-9_Male_Vertical_P2.77x2.84mm.wrl
+      (offset (xyz -5.5 -2.5 0.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
