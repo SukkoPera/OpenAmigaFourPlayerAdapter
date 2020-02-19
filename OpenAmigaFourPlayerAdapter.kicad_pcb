@@ -1012,7 +1012,7 @@
   )
 
   (gr_line (start 176.403 113.665) (end 180.721 109.347) (layer Edge.Cuts) (width 0.05) (tstamp 5E433B5F))
-  (gr_text "github.com/SukkoPera/OpenAmigaFourPlayerAdapter\n\nLicensed under CERN OHL v.1.2" (at 154.844749 102.362) (layer B.SilkS)
+  (gr_text "github.com/SukkoPera/OpenAmigaFourPlayerAdapter\n\nLicensed under CERN OHL v.1.2" (at 154.813 101.854) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text V2 (at 175.514 112.268) (layer B.SilkS)
