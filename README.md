@@ -8,14 +8,14 @@ Some Amiga Games support more than the two joysticks you can connect directly to
 
 The adapter slightly improves that design by also providing 5V power to the joystick ports.
 
-Testing was only carried out with Dyna Blaster. [Here is a list](http://eab.abime.net/showthread.php?t=3062) of more games that *should* hopefully work with it.
+Testing was only carried out with DynaBlaster. [Here is a list](https://aminet.net/package/docs/misc/FourPlayerGames_EN) of more games that *should* hopefully work with it. Actually the list includes the same circuit the adapter is based on, so there are good chances this will be the case. Please report any failures.
 
 ### Usage
 Building the adapter is very easy, just note that you need all male connectors, for both the DB-9 and the DB-25 ports.
 
-The adapter needs no configuration. The only option is whether the 5V power pins of the joystick ports should actually be powered or not. Most old-style joysticks do not need power, but if you are using one with autofire functionalities or maybe [some kind of "smart" adapter](https://github.com/SukkoPera/OpenPSX2AmigaPadAdapter), it probably will. Now, the problem is that most (if not all) Amiga models limit the current that can be drawn from the parallel port through a resistor, usually 47 ohm 1/2 W (checked personally on an A500 rev 8A, an A600 rev 1.5 and an A1200 rev 1D.4). This means that only about 100 mA will be available on the port. This should be enough for most joysticks, but please make sure this is ok in your case, or you might blow the current limiting resistor inside your Amiga.
+The adapter needs no configuration. The only option is whether the 5V power pins of the joystick ports should actually be powered or not. Most old-style joysticks do not need power, but if you are using one with autofire functionalities or maybe [some kind of "smart" adapter](https://github.com/SukkoPera/OpenPSX2AmigaPadAdapter), it probably will. Now, the problem is that most (if not all) Amiga models limit the current that can be drawn from the parallel port through a resistor, usually 47 ohm 1/2 W (checked personally on an A500 rev 8A, an A600 rev 1.5 and an A1200 rev 1D.4). This means that only about 100 mA will be available on the port: this should be enough for a couple of most joysticks (the adapter itself is fully passive and consumes no current), but **please make sure this is ok in your case, or you might blow the current limiting resistor inside your Amiga**.
 
-[Ian Steadman](http://www.ianstedman.co.uk/Amiga/amiga_h_w/parallel_port/parallel_port.html) says that the Amiga parallel port can only supply 3.2mA. I don't know what he based his calculations on, but this definitely means **you MUST check carefully what is inside your Amiga and do your own maths**, I take no responsibility.
+[Ian Steadman](http://www.ianstedman.co.uk/Amiga/amiga_h_w/parallel_port/parallel_port.html) says that the Amiga parallel port can only supply 10 mA. I don't know what he based his calculations on, but this definitely means **you MUST check carefully what is inside your Amiga and do your own maths**, I take no responsibility.
 
 Once you are sure your Amiga can bear the current, just close the jumper placed near the port of interest.
 
