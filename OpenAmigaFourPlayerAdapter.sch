@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OpenAmigaFourPlayerAdapter"
-Date "2020-01-02"
-Rev "1git"
+Date "2020-02-22"
+Rev "2"
 Comp "SukkoPera"
 Comment1 "Licensed under CERN OHL v.1.2"
 Comment2 "Thanks to Graham P."
@@ -70,9 +70,9 @@ Wire Wire Line
 Wire Wire Line
 	3800 2500 3800 3100
 Wire Wire Line
-	3800 3100 5815 3105
+	3800 3100 5955 3105
 Wire Wire Line
-	5815 3105 5815 4000
+	5955 3105 5955 3900
 Wire Wire Line
 	4900 4100 4000 4100
 Wire Wire Line
@@ -130,7 +130,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 5700 5700 5700
 Wire Wire Line
-	5700 5700 5700 4100
+	5700 5700 5700 4700
 Wire Wire Line
 	5700 4000 5500 4000
 $Comp
@@ -169,22 +169,22 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male JP3
 U 1 1 5E0E9126
-P 6250 3600
-F 0 "JP3" V 6085 3528 50  0000 C CNN
-F 1 "J3POWER" V 6176 3528 50  0000 C CNN
-F 2 "OpenAmigaFourPlayerAdapter:PinHeader_1x02_P2.54mm_Vertical" H 6250 3600 50  0001 C CNN
-F 3 "~" H 6250 3600 50  0001 C CNN
-	1    6250 3600
+P 6250 3455
+F 0 "JP3" V 6085 3383 50  0000 C CNN
+F 1 "J3POWER" V 6176 3383 50  0000 C CNN
+F 2 "OpenAmigaFourPlayerAdapter:PinHeader_1x02_P2.54mm_Vertical" H 6250 3455 50  0001 C CNN
+F 3 "~" H 6250 3455 50  0001 C CNN
+	1    6250 3455
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5500 3600 5595 3600
 Wire Wire Line
-	5595 3600 5595 3900
+	5595 3600 5595 3800
 Wire Wire Line
-	6150 3900 6150 3800
+	6150 3800 6150 3655
 Wire Wire Line
-	5595 3900 6150 3900
+	5595 3800 6150 3800
 $Comp
 L Connector:Conn_01x02_Male JP4
 U 1 1 5E0F1A6F
@@ -201,8 +201,8 @@ Wire Wire Line
 Wire Wire Line
 	5940 4800 5595 4800
 Wire Wire Line
-	5595 4800 5595 3900
-Connection ~ 5595 3900
+	5595 4800 5595 3800
+Connection ~ 5595 3800
 Text Label 5595 3600 2    50   ~ 0
 +5v
 Text Label 4665 3700 0    50   ~ 0
@@ -225,10 +225,6 @@ Text Label 4665 4600 0    50   ~ 0
 fire4
 Text Label 4665 4800 0    50   ~ 0
 fire3
-Text Label 5540 4000 0    50   ~ 0
-gnd
-Wire Wire Line
-	5700 4000 5815 4000
 Connection ~ 5700 4000
 Wire Wire Line
 	7600 3800 7795 3800
@@ -237,7 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	7795 4190 6250 4190
 Wire Wire Line
-	6250 3800 6250 4190
+	6250 3655 6250 4190
 Wire Wire Line
 	7600 4600 7900 4600
 Wire Wire Line
@@ -263,4 +259,43 @@ F 3 "~" H 10610 6220 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 10610 6420
+Wire Wire Line
+	5500 3900 5700 3900
+Wire Wire Line
+	5700 3900 5700 4000
+Wire Wire Line
+	5500 4200 5700 4200
+Connection ~ 5700 4200
+Wire Wire Line
+	5700 4200 5700 4100
+Wire Wire Line
+	5500 4300 5700 4300
+Connection ~ 5700 4300
+Wire Wire Line
+	5700 4300 5700 4200
+Wire Wire Line
+	5500 4400 5700 4400
+Connection ~ 5700 4400
+Wire Wire Line
+	5700 4400 5700 4300
+Wire Wire Line
+	5500 4500 5700 4500
+Connection ~ 5700 4500
+Wire Wire Line
+	5700 4500 5700 4400
+Wire Wire Line
+	5500 4600 5700 4600
+Connection ~ 5700 4600
+Wire Wire Line
+	5700 4600 5700 4500
+Wire Wire Line
+	5500 4700 5700 4700
+Connection ~ 5700 4700
+Wire Wire Line
+	5700 4700 5700 4600
+Wire Wire Line
+	5700 3900 5955 3900
+Connection ~ 5700 3900
+Text Label 5800 3900 0    50   ~ 0
+gnd
 $EndSCHEMATC
