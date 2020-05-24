@@ -3,14 +3,14 @@ OpenAmigaFourPlayerAdapter is an Open Hardware adapter that allows connecting tw
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/OpenAmigaFourPlayerAdapter/master/img/render-top.png)
 
-### Summary
+## Summary
 Some Amiga Games support more than the two joysticks you can connect directly to all Amiga models. The two extra joysticks are supposed to be connected to the parallel port through an adapter. OpenAmigaFourPlayerAdapter is an Open Hardware implementation of such an adapter, based on [Tomi Engdahl's Multi-joystick extender circuit](https://www.epanorama.net/documents/joystick/amiga_circuits.html), which claims to be the de-facto standard for this. The same circuit was found on other sources, so this should not be too far away from the actual truth.
 
 The adapter slightly improves that design by also providing 5V power to the joystick ports. Finally, its apparently odd shape allows it not to bump into the nearby power/audio cables that will be connected to your Amiga.
 
 Testing was only carried out with DynaBlaster. [Here is a list](https://aminet.net/package/docs/misc/FourPlayerGames_EN) of more games that *should* hopefully work with it. Actually the list includes the same circuit the adapter is based on, so there are good chances this will be the case. Please report any failures.
 
-### Assembly and Usage
+## Assembly and Usage
 Building the adapter is very easy, just note that you need all male connectors, for both the DB-9 and the DB-25 ports.
 
 The adapter needs no configuration. The only option is whether the 5V power pins of the joystick ports should actually be powered or not. The adapter itself is fully passive and consumes no current. Most old-style joysticks do not need power either, but if you are using one with autofire functionalities or maybe [some "complex" adapter](https://github.com/SukkoPera/OpenPSX2AmigaPadAdapter), it probably will. Now, the problem is that parallel ports are only required to supply a current of 10 mA, which is very little and probably not enough for even the simplest controller that needs power.
@@ -21,14 +21,14 @@ Once you are sure your Amiga can bear the current, just close the jumper placed 
 
 Finally, please note that you are recommended to **only connect/disconnect the adapter and the joysticks while your Amiga is powered off**, in order to avoid any risk of damage.
 
-### Releases
+## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/OpenAmigaFourPlayerAdapter/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
 **I am not providing ready-to-use gerber files**. If all you want is **to get boards made, I would really appreciate if you did so [in a way that supports the project](#support-the-project)**.
 
-### License
+## License
 The OpenAmigaFourPlayerAdapter documentation, including the design itself, is copyright &copy; SukkoPera 2020.
 
 OpenAmigaFourPlayerAdapter is Open Hardware licensed under the [CERN OHL v. 1.2](http://ohwr.org/cernohl).
@@ -43,7 +43,7 @@ Any modifications made by Licensees (see section 3.4.b) shall be recorded in fil
 
 The Documentation Location of the original project is https://github.com/SukkoPera/OpenAmigaFourPlayerAdapter/.
 
-### Support the Project
+## Support the Project
 If you want to support the project, you can order the boards from PCBWay through this link:
 
 [![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/OpenAmigaFourPlayerAdapter_V1.html)
@@ -56,9 +56,9 @@ You can also buy me a coffee if you want:
 
 <a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-### Get Help
+## Get Help
 If you need help or have any questions or suggestions, you can join `#OpenRetroWorks` on FreeNode through your favorite IRC client or [the webchat](https://webchat.freenode.net/), or [the official Telegram group](https://t.me/joinchat/HUHdWBC9J9JnYIrvTYfZmg).
 
-### Thanks
+## Thanks
 - Graham P. for sending me the design of a similar adapter he was working on.
 - Tomi Engdahl for publishing the circuit.
