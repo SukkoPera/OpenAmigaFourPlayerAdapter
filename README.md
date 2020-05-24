@@ -6,16 +6,16 @@ OpenAmigaFourPlayerAdapter is an Open Hardware adapter that allows connecting tw
 ### Summary
 Some Amiga Games support more than the two joysticks you can connect directly to all Amiga models. The two extra joysticks are supposed to be connected to the parallel port through an adapter. OpenAmigaFourPlayerAdapter is an Open Hardware implementation of such an adapter, based on [Tomi Engdahl's Multi-joystick extender circuit](https://www.epanorama.net/documents/joystick/amiga_circuits.html), which claims to be the de-facto standard for this. The same circuit was found on other sources, so this should not be too far away from the actual truth.
 
-The adapter slightly improves that design by also providing 5V power to the joystick ports.
+The adapter slightly improves that design by also providing 5V power to the joystick ports. Finally, its apparently odd shape allows it not to bump into the nearby power/audio cables that will be connected to your Amiga.
 
 Testing was only carried out with DynaBlaster. [Here is a list](https://aminet.net/package/docs/misc/FourPlayerGames_EN) of more games that *should* hopefully work with it. Actually the list includes the same circuit the adapter is based on, so there are good chances this will be the case. Please report any failures.
 
-### Usage
+### Assembly and Usage
 Building the adapter is very easy, just note that you need all male connectors, for both the DB-9 and the DB-25 ports.
 
-The adapter needs no configuration. The only option is whether the 5V power pins of the joystick ports should actually be powered or not. The adapter itself is fully passive and consumes no current. Most old-style joysticks do not need power either, but if you are using one with autofire functionalities or maybe [some kind of "smart" adapter](https://github.com/SukkoPera/OpenPSX2AmigaPadAdapter), it probably will. Now, the problem is that parallel ports are only required to supply a current of 10 mA, which is very little and will probably not be enough to power even the simplest controller that needs power.
+The adapter needs no configuration. The only option is whether the 5V power pins of the joystick ports should actually be powered or not. The adapter itself is fully passive and consumes no current. Most old-style joysticks do not need power either, but if you are using one with autofire functionalities or maybe [some "complex" adapter](https://github.com/SukkoPera/OpenPSX2AmigaPadAdapter), it probably will. Now, the problem is that parallel ports are only required to supply a current of 10 mA, which is very little and probably not enough for even the simplest controller that needs power.
 
-Luckily, most (if not all) Amiga models actually go beyond that and are able to provide about 100 mA. I really recommend you to check personally what is inside your Amiga: there should be a  current-limiting resistor connected to pin 14 (It should be labeled E501 on the A500): I found out that this is usually 47 ohm 1/2 W (I checked on an A500 rev 8A, an A600 rev 1.5 and an A1200 rev 1D.4). If this is your case as well, then you will be fine, but **please make sure this applies to your Amiga, or you might blow that resistor**! You have been warned, I take no responsibility!
+Luckily, most (if not all) Amiga models actually go beyond that and are able to provide about 100 mA. I really recommend you to check personally what is inside your Amiga: there should be a  current-limiting resistor connected to pin 14 of the parallel port (It should be labeled E501 on the A500): I found out that this is usually 47 ohm 1/2 W (I checked on an A500 rev 8A, an A600 rev 1.5 and an A1200 rev 1D.4). If this is your case as well, then you will be fine, but **please make sure this applies to your Amiga, or you might blow that resistor**! You have been warned, I take no responsibility!
 
 Once you are sure your Amiga can bear the current, just close the jumper placed near the port(s) of interest.
 
@@ -58,5 +58,5 @@ You can also buy me a coffee if you want:
 If you need help or have questions, you can join [the official Telegram group](https://t.me/joinchat/HUHdWBC9J9JnYIrvTYfZmg).
 
 ### Thanks
-- Graham P. for sending me the design of a similar adapter he made.
+- Graham P. for sending me the design of a similar adapter he was working on.
 - Tomi Engdahl for publishing the circuit.
