@@ -28,6 +28,11 @@ Every release is accompanied by its Bill Of Materials (BOM) file and any relevan
 
 **I am not providing ready-to-use gerber files**. If all you want is **to get boards made, I would really appreciate if you did so [in a way that supports the project](#support-the-project)**.
 
+### Enclosure
+One 3D-printable enclosure is currently available for this board:
+
+- Kindly contribution by Youen Chéné available in [enclosure](./enclosure) folder. It needs 2 screws for assembly.
+
 ## License
 The OpenAmigaFourPlayerAdapter documentation, including the design itself, is copyright &copy; SukkoPera 2020.
 
