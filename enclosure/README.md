@@ -1,3 +1,8 @@
+# 2 sets of files
+
+- for 2mm diameter x 10mm length wood screws.
+- for real small m3x10mm screws.
+
 # How to print
 
 Use the 2 STL files into your favorite slicer as [Ultimaker Cura]( https://ultimaker.com/software/ultimaker-cura)
